@@ -1,6 +1,6 @@
 {
   "homepage": "https://q3st1on.github.io/not_cryptohack",
-  "name": "project1",
+  "name": "not_cryptohack",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "react-dom": "^17.0.2",
     "react-latex": "^2.0.0",
     "react-router": "^6.2.2",
-    "react-router-dom": "^6.2.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"

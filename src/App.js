@@ -4,20 +4,24 @@ import Intro from './pages/INTRODUCTION';
 import Maths from './pages/MATHS';
 import DH from './pages/DIFFIE-HELLMAN';
 import Home from './pages/HOME';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
 
 const App = () => {
-  var path = window.location.pathname;
-  if (path == "/pages/RSA.js") {
-    return(<><NavigationBar /><RSA /></>)
-  } else if (path == "/pages/DIFFIE-HELLMAN.js") {
-    return(<><NavigationBar /><DH /></>)
-  } else if (path == "/pages/MATHS.js") {
-    return(<><NavigationBar /><Maths /></>)
-  } else if (path == "/pages/INTRODUCTION.js") {
-    return(<><NavigationBar /><Intro /></>)
-  } else {
-    return (<><NavigationBar /><Home /> </>);
-  }
+  return(
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/RSA.js" element={<RSA />} />
+        <Route path="/DIFFIE-HELLMAN.js" element={<DH />} />
+        <Route path="/MATHS.js" element={<Maths />} />
+        <Route path="/INTRODUCTION.js" element={<Intro />} />
+        <Route path="/not_cryptohack" element={<Home/>} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
