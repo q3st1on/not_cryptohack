@@ -1,3 +1,15 @@
+import fileDownload from 'js-file-download'
+import axios from 'axios';
+
+const handleDownload = (url, filename) => {
+  axios.get(url, {
+    responseType: 'blob',
+  })
+  .then((res) => {
+    fileDownload(res.data, filename)
+  })
+}
+
 const challenge = (challenge_details) => {
   let Latex = require('react-latex');
   if (challenge_details.files == true) {
@@ -19,8 +31,8 @@ const challenge = (challenge_details) => {
                 <p><Latex trust={true}>{line}</Latex></p>
               ))}
               <div class="flex flex-col pt-4">
-                <a class="flex-initial font-IBMPlexMonoRegular text-darkred text-center" href={scriptpath} download={challenge_details.scriptfile}>{challenge_details.scriptfile}</a>
-                <a class="flex-initial font-IBMPlexMonoRegular text-darkred text-center" href={outpath} download={challenge_details.outfile}>{challenge_details.outfile}</a>
+                <button onClick={() => {handleDownload(scriptpath, challenge_details.scriptfile)}} class="flex-initial font-IBMPlexMonoRegular text-darkred text-center">{challenge_details.scriptfile}</button>
+                <button onClick={() => {handleDownload(outpath, challenge_details.outfile)}} class="flex-initial font-IBMPlexMonoRegular text-darkred text-center">{challenge_details.outfile}</button>
               </div>
               <div class="flex flex-row pt-4">
                 <a class="w-1/12"></a>

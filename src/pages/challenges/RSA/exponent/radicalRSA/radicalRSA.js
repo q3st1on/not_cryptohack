@@ -8,7 +8,7 @@ const radicalRSA = () => {
         author: "q3st1on",
         placeholder: "Enter flag here: crypto{FLAG}",
         files: true,
-        filepath: "/challenges/RSA/exponent/radicalRSA/",
+        filepath: "https://raw.githubusercontent.com/q3st1on/not_cryptohack/gh-pages/challenges/RSA/exponent/radicalRSA/",
         scriptfile: "radicalRSA.py",
         outfile: "output.txt",
     };
