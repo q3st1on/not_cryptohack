@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/not_cryptohack/static/css/main.7d9191be.css",
+    "main.js": "/not_cryptohack/static/js/main.43796f73.js",
+    "static/js/787.142da1d4.chunk.js": "/not_cryptohack/static/js/787.142da1d4.chunk.js",
+    "index.html": "/not_cryptohack/index.html",
+    "main.7d9191be.css.map": "/not_cryptohack/static/css/main.7d9191be.css.map",
+    "main.43796f73.js.map": "/not_cryptohack/static/js/main.43796f73.js.map",
+    "787.142da1d4.chunk.js.map": "/not_cryptohack/static/js/787.142da1d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d9191be.css",
+    "static/js/main.43796f73.js"
+  ]
+}
