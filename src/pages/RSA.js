@@ -10,7 +10,15 @@ const RSA = () => {
         "Introduction",
         [
           "RSA is a public key cryptosystem invented by by Ron Rivest, Adi Shamir and Leonard Adleman in 1977 that relies on the inherent difficulty of factoring large semi-primes.",
-          "That is, RSA is secure because of how difficult it is to find two primes $p,q$ from their product $n$, given sufficiently large values for $p$ and $q$. But knowing the so called",
+          "That is, RSA is secure because of how difficult it is to find two primes ",
+          "$p,q$",
+          " from their product ",
+          "$n$",
+          ", given sufficiently large values for ",
+          "$p$",
+          " and ",
+          "$q$",
+          ". But knowing the so called",
           "'trapdoor' function that RSA depends upon gives little insight into how the cryptosystem actually works. This section should give you that foundational understanding,",
           "and teach you enough about RSA to be able to tackle the challenges ahead."
         ]

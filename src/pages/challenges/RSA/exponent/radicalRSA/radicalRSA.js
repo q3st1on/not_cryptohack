@@ -3,6 +3,7 @@ import React from "react";
 const radicalRSA = () => {
     let challenge = {
         title: "Radical RSA",
+        name: "Radical RSA",
         points: 50,
         text: ["My friend said that my RSA has a radical flaw. I dont know what that means, mabe you can find out."],
         author: "q3st1on",
